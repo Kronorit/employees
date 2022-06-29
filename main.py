@@ -9,7 +9,7 @@ from functions.crearEmpleado import crearEmpleado
 from functions.eliminarEmpleado import eliminarEmpleado
 from functions.modificarEmpleado import modificarEmpleado
 
-# Conexión base de datos
+# Mensaje temporal de manejo de la base de datos
 
 mensaje = '''===Manejo de bases de datos===\n
 1) Consultar empleado mediante el ID.
@@ -18,6 +18,8 @@ mensaje = '''===Manejo de bases de datos===\n
 4) Modificar un empleado.
 5) Consultar lista completa de empleados registrados en la base de datos.\n
 Escriba la opción con el número indicado: '''
+
+# Conexión base de datos
 
 conexion = psycopg2.connect(
         user='postgres',
